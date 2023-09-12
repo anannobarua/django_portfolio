@@ -1,0 +1,41 @@
+{% load static %}
+<!-- about section -->
+<section class="section pt-0" id="about">
+    <!-- container -->
+    <div class="container text-center">
+        <!-- about wrapper -->
+        <div class="about">
+            <div class="about-img-holder">
+                {% for item in data %}
+                <img src="{{item.image}}" class="about-img"
+                alt="Image Alt Text" class="round-image">                    
+                {% endfor %}
+            </div>
+            {% comment %} static 'assets/imgs/man.png' {% endcomment %}
+            <div class="about-caption">
+                <p class="section-subtitle">Who Am I ?</p>
+                <h2 class="section-title mb-3">About Me</h2>
+                
+                <div class:="box">
+                {% for item in data %}
+                
+                   <p>
+                    {{item.description}}
+                   </p> 
+
+                {% endfor %}
+
+                </div>
+                {% for item in data%}
+                {% comment %} <button class="btn-rounded btn btn-outline-primary mt-4" herf="{{item.file}}" >Download CV</button> {% endcomment %}
+                
+                <a href = "{{item.file}}" Download = "test_image">
+                    <button class="btn-rounded btn btn-outline-primary mt-4"> Download CV </button>
+                </a>
+
+                {% endfor %}
+            </div>
+            
+        </div><!-- end of about wrapper -->
+    </div><!-- end of container -->
+</section> <!-- end of about section -->
