@@ -5,16 +5,17 @@
         <p class="section-subtitle">How can you communicate?</p>
         <h6 class="section-title mb-5">Contact Me</h6>
         <!-- contact form -->
-        <form action="" class="contact-form col-md-10 col-lg-8 m-auto">
+        <form method="POST" action="{% url 'saveen' %}"  class="contact-form col-md-10 col-lg-8 m-auto">
+            {% csrf_token %}
             <div class="form-row">
                 <div class="form-group col-sm-6">
-                    <input type="text" size="50" class="form-control" placeholder="Your Name" required>
+                    <input size="50" class="form-control" name="name" placeholder="Your Name" required>
                 </div>
                 <div class="form-group col-sm-6">
-                    <input type="email" class="form-control" placeholder="Enter Email" requried>
+                    <input class="form-control" name="email" placeholder="Enter Email" requried>
                 </div>
                 <div class="form-group col-sm-12">
-                    <textarea name="comment" id="comment" rows="6" class="form-control"
+                    <textarea id="comment" rows="6" class="form-control" name="description"
                         placeholder="Write Something"></textarea>
                 </div>
                 <div class="form-group col-sm-12 mt-3">

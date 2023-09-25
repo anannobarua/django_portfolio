@@ -6,7 +6,7 @@
         <!-- about wrapper -->
         <div class="about">
             <div class="about-img-holder">
-                {% for item in data %}
+                {% for item in about_data %}
                 <img src="{{item.image}}" class="about-img"
                 alt="Image Alt Text" class="round-image">                    
                 {% endfor %}
@@ -17,7 +17,7 @@
                 <h2 class="section-title mb-3">About Me</h2>
                 
                 <div class:="box">
-                {% for item in data %}
+                {% for item in about_data %}
                 
                    <p>
                     {{item.description}}
@@ -26,7 +26,7 @@
                 {% endfor %}
 
                 </div>
-                {% for item in data%}
+                {% for item in about_data%}
                 {% comment %} <button class="btn-rounded btn btn-outline-primary mt-4" herf="{{item.file}}" >Download CV</button> {% endcomment %}
                 
                 <a href = "{{item.file}}" Download = "test_image">

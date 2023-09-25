@@ -428,7 +428,6 @@ h6, .h6 {
   line-height: 1.2;
 }
 
-
 hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -1318,10 +1317,6 @@ pre code {
     -webkit-order: 12;
         -ms-flex-order: 12;
             order: 12;
-  }
-
-  .center-text {
-    text-align: center;
   }
   .offset-md-0 {
     margin-left: 0;

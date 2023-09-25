@@ -1,4 +1,5 @@
 {% load static %}
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -20,7 +21,7 @@
     <!-- Page Navbar -->
     <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
         <div class="container">
-            <a class="logo" href="#">Ananno</a>
+            <a class="logo" href="">Ananno</a>
             <ul class="nav">
                 <li class="item">
                     <a class="link" href="#home">Home</a>
@@ -31,9 +32,9 @@
                 <li class="item">
                     <a class="link" href="#portfolio">Portfolio</a>
                 </li>
-                <li class="item">
+                {% comment %} <li class="item">
                     <a class="link" href="#testmonial">Testmonial</a>
-                </li>
+                </li> {% endcomment %}
                 <li class="item">
                     <a class="link" href="#blog">Blog</a>
                 </li>
@@ -50,21 +51,5 @@
                 </div>
             </a>
         </div>
-    </nav><!-- End of Page Navbar -->
-
-    <!-- page header -->
-    <header id="home" class="header">
-        <div class="overlay"></div>
-        <div class="header-content container">
-            <h1 class="header-title">
-                <span class="up">HI!</span>
-                <span class="down">I am Ananno Barua</span>
-            </h1>
-            <p class="header-subtitle">Software Developer</p>
-
-            <button class="btn btn-primary">Visit My Works</button>
-        </div>
-    </header>
-    
-    <!-- end of page header -->
-
+    </nav>
+    <!-- End of Page Navbar -->
